@@ -1,0 +1,518 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background: #ffffff;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+/*---------Header-----------*/
+
+header {
+    background-image: url(../Imagenes/portada.png);
+    width: 100%;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/*----------Menu------------*/
+
+header .menu {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+    height: 40px;
+}
+
+header .menu a {
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 17px;
+    color: #ffffff;
+}
+
+header .menu a:hover {
+    text-decoration: underline;
+    font-size: 19px;
+}
+
+/*---------textos----------*/
+
+.contenedor-textos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 120px;
+}
+
+.contenedor-textos .titulo {
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 100px;
+    color: #ffffff;
+}
+
+.contenedor-textos .titulo2 {
+    font-size: 20px;
+    text-align: center;
+    font-weight: 300;
+    margin: 30px 0;
+    color: #b1adad;
+}
+
+/*-------linea----------*/
+
+.contenedor-textos .linea {
+    background: blue;
+    width: 70%;
+    height: 3px;
+    margin: auto;
+}
+
+/*--------Buttom----------*/
+
+.buttom {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.buttom a {
+    display: inline-block;
+    border: 1px solid blue;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-top: 45px;
+    box-shadow: 2px 2px 5px black;
+    border-radius: 3px;
+}
+
+.buttom a:active {
+    background: blue;
+    box-shadow: none;
+}
+
+.buttom a:hover {
+    font-size: 16.02px;
+}
+
+/*--------Descripcion---------*/
+
+.acerca-de {
+    background: #E6E6E6;
+    height: 200px;
+    overflow: hidden;
+}
+
+.portafolio-padre {
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.descripcion-padre .texto-1 {
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 30px;
+}
+
+.descripcion-padre .texto-2 {
+    text-align: center;
+    font-weight: 600;
+    margin-top: 20px;
+    color: #807f7f;
+}
+
+/*-------Portafolio--------*/
+
+.portafolio-padre {
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*---------Portafolio / icon---------*/
+
+.icon img {
+    width: 80px;
+    height: auto;
+    object-fit: cover;
+}
+
+.icon img:hover {
+    width: 85px;
+    cursor: pointer;
+}
+
+.portafolio-hijo {
+    /*background: chartreuse;*/
+    text-align: center;
+    width: 33%;
+}
+
+/*------Portafolio / textos-------*/
+
+.h2-hijo {
+    font-size: 14px;
+    font-weight: 800;
+    margin: 10px 0;
+}
+
+.p-hijo {
+    font-size: 13px;
+    font-weight: 300;
+}
+
+/*------Galeria-------*/
+
+.galeria {
+    background: #E6E6E6;
+    padding: 30px 0;
+}
+
+/*------Galeria / Textos-------*/
+
+.h2-galeria {
+    font-size: 40px;
+    font-weight: 600;
+    color: #727A85;
+    text-align: center;
+}
+
+.p-galeria {
+    font-weight: 300;
+    font-size: 15px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+/*-----Galeria / Imagenes-----*/
+
+.galeria-fotos {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.imagenes {
+    width: 33%;
+}
+
+.imagenes img {
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
+    margin: 20px 0;
+    border-radius: 3px;
+}
+
+.imagenes img:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+/*------Footer------*/
+
+footer {
+    width: 100%;
+    height: 400px;
+    background-image: url(../Imagenes/footer.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 30px 0;
+}
+
+/*------Footer / texto------*/
+
+.contacto-texto {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.contacto-texto .h3-contacto {
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.contacto-texto .p-contacto {
+    font-weight: 300;
+    color: #b1adad;
+    margin-bottom: 30px;
+}
+
+/*------Footer / Form-father------*/
+
+.form-father {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: auto;
+}
+
+/*------Footer / Form-sons------*/
+
+.form-father .nombre,
+.form-father .email {
+    margin-bottom: 15px;
+    height: 30px;
+    border: 1px solid #b1adad;
+    border-radius: 3px;
+    background: none;
+    padding: 20px 10px;
+}
+
+.form-father .mensaje {
+    height: 100px;
+    background: none;
+    padding: 20px 10px;
+    border-radius: 3px;
+    max-height: 100px;
+    min-height: 50px;
+    max-width: 100%;
+    min-width: 100%;
+    margin-bottom: 20px;
+}
+
+.submit-father {
+    /*float: right;*/
+    display: flex;
+    justify-content: flex-end;
+}
+
+.submit-father .submit {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 3px;
+    box-shadow: 2px 2px 5px #000000;
+    margin-bottom: 1px;
+}
+
+.submit-father .submit:active {
+    box-shadow: none;
+}
+
+/* -------Para el javascript------- */
+.contenedorImagenes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(5, 5, 0, 0.911);
+    display: none;
+}
+
+.spread{
+    display: initial;
+    display: flex;
+}
+
+.cajaScript {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 90%;
+    height: 350px;
+    border-radius: 10px;
+    background-color: rgba(17, 17, 17, 0.651);
+}
+
+.cajaScript .imagenSelect {
+    width: 50%;
+    align-self: center;
+    text-align: center;
+}
+
+.cajaScript .imagenSelect img {
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+}
+
+.cajaScript .textScript {
+    width: 40%;
+    text-align: justify;
+}
+
+.cajaScript .textScript p {
+    color: #ffffff;
+    padding: 20px;
+    width: 100%;
+}
+
+.x {
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 20px;
+}
+
+.contenedorImagenes i {
+    font-size: 30px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+/*------Diseño Responsive------*/
+
+
+@media screen and (max-width:1020px) {
+    .imagenes {
+        width: 28%;
+    }
+}
+
+@media screen and (max-width:950px) {
+    .imagenes {
+        width: 40%;
+    }
+
+    .galeria-fotos {
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width:690px) {
+    .galeria-fotos {
+        text-align: center;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width:672px) {
+    .imagenes img {
+        width: 250px;
+        height: 220px;
+        object-fit: cover;
+        margin: 20px 0;
+    }
+
+    .cajaScript .textScript {
+        width: 45%;
+    }
+
+    .cajaScript .textScript p {
+        padding: none;
+        font-size: 14px;
+    }
+
+    .cajaScript .imagenSelect {
+        width: 50%;
+    }
+
+    .cajaScript .imagenSelect img {
+        object-fit: cover;
+        width: 320px;
+    }
+
+    .cajaScript {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .cajaScript .imagenSelect img {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width:574px) {
+    .imagenes {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .imagenes img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        margin: 20px 0 0 0;
+    }
+
+    .p-hijo {
+        text-align: justify;
+        font-weight: 300;
+    }
+
+    .portafolio-padre {
+        flex-direction: column;
+    }
+
+    .portafolio-hijo {
+        /*background: chartreuse;*/
+        text-align: center;
+        width: 90%;
+        margin-bottom: 15px;
+    }
+
+    .cajaScript .imagenSelect img {
+        width: 90%;
+        height: 250px;
+    }
+
+    .cajaScript .textScript {
+        align-self: center;
+    }
+}
+
+@media screen and (max-width:470px) {
+    header .menu {
+        justify-content: center;
+    }
+
+    .descripcion-padre .texto-2 {
+        font-size: 15px;
+    }
+
+
+    .cajaScript .imagenSelect {
+        width: 100%;
+    }
+
+    .cajaScript .textScript {
+        width: 90%;
+    }
+
+    .cajaScript .imagenSelect img {
+        width: 90%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:460px) {
+
+    .imagenes img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .descripcion-padre .texto-2 {
+        font-size: 13px;
+    }
+
+    .imagenes {
+        width: 100%;
+    }
+}
